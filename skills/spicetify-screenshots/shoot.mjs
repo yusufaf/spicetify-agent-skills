@@ -179,11 +179,19 @@ async function resolveTarget(conn, selector, { text, index }) {
   } else if (cmd === 'reset-viewport') {
     // Re-assert in THIS session first: clearing an override owned by a dead
     // session is a silent no-op that reports success.
-    await conn.send('Emulation.setDeviceMetricsOverride', { width: 800, height: 600, deviceScaleFactor: 0, mobile: false });
+    await conn.send('Emulation.setDeviceMetricsOverride', { width: 900, height: 700, deviceScaleFactor: 0, mobile: false });
     await conn.send('Emulation.clearDeviceMetricsOverride');
     writeState(null);
+    // The clear is asynchronous — the page relayouts a few frames later. Checking
+    // once races it and reports a stuck viewport (or worse, leaves one).
+    try {
+      await pollUntil(conn, 'Math.abs(innerWidth - outerWidth) <= 40', 10000);
+    } catch {
+      const [w, outer] = await evaluate(conn, '[innerWidth, outerWidth]');
+      throw new Error(`viewport still overridden after 10s: innerWidth=${w} vs outerWidth=${outer}. `
+        + 'Re-run reset-viewport; if it persists, restart Spotify.');
+    }
     const [w, outer] = await evaluate(conn, '[innerWidth, outerWidth]');
-    if (Math.abs(w - outer) > 40) throw new Error(`viewport still overridden: innerWidth=${w} vs outerWidth=${outer}`);
     console.log(`viewport override cleared and verified (innerWidth=${w}, outerWidth=${outer})`);
 
   } else if (cmd === 'status') {
@@ -202,8 +210,16 @@ async function resolveTarget(conn, selector, { text, index }) {
   } else if (cmd === 'navigate') {
     const path = argv[1];
     if (!path) throw new Error('navigate needs a path, e.g. /album/<id>');
+    if (!path.startsWith('/')) {
+      throw new Error(`path must start with "/" (got "${path}"). On Git Bash, prefix the command `
+        + 'with MSYS_NO_PATHCONV=1 — it rewrites leading-slash arguments into Windows paths.');
+    }
+    // Spicetify is injected after load; pushing before it exists throws.
+    await pollUntil(conn, 'window.Spicetify?.Platform?.History?.push !== undefined', 30000);
     await evaluate(conn, `Spicetify.Platform.History.push(${JSON.stringify(path)})`);
-    await pollUntil(conn, `location.hash.includes(${JSON.stringify(path)}) || location.pathname.includes(${JSON.stringify(path)})`, 10000);
+    // Spotify routes through Spicetify's history object, not window.location.
+    await pollUntil(conn,
+      `(Spicetify.Platform.History.location?.pathname || '').includes(${JSON.stringify(path)})`, 10000);
     console.log(`navigated to ${path}`);
 
   } else if (cmd === 'click') {
