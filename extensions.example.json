@@ -1,0 +1,5 @@
+{
+  "_comment": "Copy to extensions.json. Maps each local extension repo to the filename Spotify actually loads. The repo directory name and the bundle filename often differ, which is why this mapping exists.",
+  "C:/Projects/my-extension": "my-extension.js",
+  "/Users/you/Projects/another-extension": "another-extension.js"
+}
