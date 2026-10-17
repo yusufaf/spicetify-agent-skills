@@ -65,7 +65,9 @@ of injecting badge markup to get a good-looking shot.
 
 **A `spicetify apply` silently breaks hot reload.** Apply overwrites the loaded xpui bundle
 with a plain copy of your extension, replacing the symlink. Edits then appear to do nothing.
-Re-create the symlinks after every apply.
+Re-create the symlinks after every apply. Don't swap in hardlinks if symlinks aren't
+available: apply has been observed truncating a hardlinked extension file, which wipes the repo
+source too. Use plain copies instead.
 
 **`deviceScaleFactor` alone does not produce 2x screenshots.** CDP's screenshot clip is
 measured in CSS pixels, so overriding the device pixel ratio improves rasterisation but leaves
