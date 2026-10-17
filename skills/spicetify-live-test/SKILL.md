@@ -47,6 +47,13 @@ On Windows those are typically `%APPDATA%\spicetify\Extensions\` and
 plain copy and silently breaks hot reload. A change that "isn't taking effect" is almost
 always this.
 
+**Never use a hardlink instead.** On Windows, real symlinks need admin or Developer Mode, so a
+hardlink looks like an easy substitute. It isn't: a hardlink is one file under two names, and
+`spicetify apply` has been observed truncating the bundled copy in place — which truncates your
+repo source along with it. If you can't create symlinks, copy the file into both locations and
+re-copy after each edit. You lose live-reload-on-save, but `location.reload()` still picks up
+the fresh copy.
+
 **3. Optional: wire up an MCP server** for richer interaction, pointing a CDP-capable MCP
 server at `http://127.0.0.1:9222`. The bundled `cdp.mjs` covers the same ground without one.
 
