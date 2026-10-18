@@ -1,0 +1,243 @@
+{
+  "themes": [
+    {
+      "id": "sleek",
+      "name": "Sleek",
+      "repo": "spicetify/spicetify-themes",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/spicetify/spicetify-themes/c432012478e1f2e2ffccca8e943e188af40d6190/Sleek/user.css",
+        "commit": "c432012478e1f2e2ffccca8e943e188af40d6190",
+        "sha256": "b5741a6e4caf5d9911fdd53010d48fd0e41f81336dc21e9f7da833d349b0a10a"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/spicetify/spicetify-themes/c432012478e1f2e2ffccca8e943e188af40d6190/Sleek/color.ini",
+        "commit": "c432012478e1f2e2ffccca8e943e188af40d6190",
+        "sha256": "4f5a883afd9e71ddf515e8c7ecf44ca55688f4824b12294f4fdcc0f90745ed68"
+      },
+      "include": [],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "dribbblish",
+      "name": "Dribbblish",
+      "repo": "spicetify/spicetify-themes",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/spicetify/spicetify-themes/c432012478e1f2e2ffccca8e943e188af40d6190/Dribbblish/user.css",
+        "commit": "c432012478e1f2e2ffccca8e943e188af40d6190",
+        "sha256": "56a1e2cf96b30c6d41b34c16d809ba71a9f5b82b2d2496215ced3bfede2308eb"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/spicetify/spicetify-themes/c432012478e1f2e2ffccca8e943e188af40d6190/Dribbblish/color.ini",
+        "commit": "c432012478e1f2e2ffccca8e943e188af40d6190",
+        "sha256": "f2d16824efb050a7444a3243221418a309f0435971a8f33818316cb2ec0f0f26"
+      },
+      "include": [
+        {
+          "url": "https://raw.githubusercontent.com/spicetify/spicetify-themes/c432012478e1f2e2ffccca8e943e188af40d6190/Dribbblish/theme.js",
+          "commit": "c432012478e1f2e2ffccca8e943e188af40d6190",
+          "sha256": "f2cc56ebbb19f3dcc3bec72eb3fbed88ffd826249fab47334fd17648bbd3eb56",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "comfy",
+      "name": "Comfy",
+      "repo": "Comfy-Themes/Spicetify",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/Comfy-Themes/Spicetify/32ff101e27cfd33d85b7cc587f7f95db6b2df8b0/Comfy/app.css",
+        "commit": "32ff101e27cfd33d85b7cc587f7f95db6b2df8b0",
+        "sha256": "de327485f2048e7b1750916559061376920ffbf4791d04ec54410977e8e892d4"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/Comfy-Themes/Spicetify/32ff101e27cfd33d85b7cc587f7f95db6b2df8b0/Comfy/color.ini",
+        "commit": "32ff101e27cfd33d85b7cc587f7f95db6b2df8b0",
+        "sha256": "5bcd27f29a34147a1dd48db3e31b2d695b7b99e583825c796dc614866ae0e63b"
+      },
+      "include": [
+        {
+          "url": "https://comfy-themes.github.io/Spicetify/Comfy/theme.script.js",
+          "commit": null,
+          "sha256": "ec82256f13a4ca1faeb0daed4829300e0f7120a8ceb8bc69bfb3adcd0e97654f",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "bloom",
+      "name": "Bloom",
+      "repo": "nimsandu/spicetify-bloom",
+      "usercss": {
+        "url": "https://nimsandu.github.io/spicetify-bloom/src/user.css",
+        "commit": null,
+        "sha256": "2f5481d527c842062a311f33d1e8b54b306660be82c1b365d7ea57d110fa5ad9"
+      },
+      "schemes": {
+        "url": "https://nimsandu.github.io/spicetify-bloom/src/color.ini",
+        "commit": null,
+        "sha256": "8c8d2b15aff52f414ab773b99d38c3ebc1b21f3203ca2c8ab6ee6c23053d7dce"
+      },
+      "include": [
+        {
+          "url": "https://nimsandu.github.io/spicetify-bloom/src/theme.js",
+          "commit": null,
+          "sha256": "8e62b027fc9aaa9cf3e0cc5b403c7be449f370e92e464ec8a700c5380f34b466",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "catppuccin",
+      "name": "Catppuccin",
+      "repo": "catppuccin/spicetify",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/catppuccin/spicetify/1ec645c4cf7f42f9792b9eeb1bb7930f94593277/catppuccin/user.css",
+        "commit": "1ec645c4cf7f42f9792b9eeb1bb7930f94593277",
+        "sha256": "34d350d86b08bd56d6b853c3c404e86fc822de073b2a3075d9c4c5413ccd1056"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/catppuccin/spicetify/1ec645c4cf7f42f9792b9eeb1bb7930f94593277/catppuccin/color.ini",
+        "commit": "1ec645c4cf7f42f9792b9eeb1bb7930f94593277",
+        "sha256": "f5c2b6a46e9b463020f8b36a21517ce6ade9e89230850f24944076e586576e07"
+      },
+      "include": [
+        {
+          "url": "https://raw.githubusercontent.com/catppuccin/spicetify/1ec645c4cf7f42f9792b9eeb1bb7930f94593277/catppuccin/theme.js",
+          "commit": "1ec645c4cf7f42f9792b9eeb1bb7930f94593277",
+          "sha256": "cac51cc1236b37b0d100ae41c9279aa6fbf2b00aa332067854d72ef37bea151c",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "lucid",
+      "name": "Lucid",
+      "repo": "sanoojes/spicetify-lucid",
+      "usercss": {
+        "url": "https://spicetify-lucid.sanooj.uk/spice/user.css",
+        "commit": null,
+        "sha256": "ef437d56022bae8cbec03ce66368b986075d38e541b4fe33c954f7980075a9ba"
+      },
+      "schemes": {
+        "url": "https://spicetify-lucid.sanooj.uk/spice/color.ini",
+        "commit": null,
+        "sha256": "895c5504ed47bc8d2dac7b30ec60b7b041afc8ecc71d376446fa6ac9faa57159"
+      },
+      "include": [
+        {
+          "url": "https://spicetify-lucid.sanooj.uk/spice/theme.js",
+          "commit": null,
+          "sha256": "f86649f9da821bac1b2a8d1632b66b0d2a6504da47eebdcb84c31ae09498c511",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "hazy",
+      "name": "Hazy",
+      "repo": "Astromations/Hazy",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/astromations/hazy/8d6da42c573710751716f2a13ea3b3af5048ef63/app.css",
+        "commit": "8d6da42c573710751716f2a13ea3b3af5048ef63",
+        "sha256": "945c4ded74325bb3e703d2fd2d0ea017877ec4e76f0d31b1dc48626235f0b411"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/astromations/hazy/8d6da42c573710751716f2a13ea3b3af5048ef63/color.ini",
+        "commit": "8d6da42c573710751716f2a13ea3b3af5048ef63",
+        "sha256": "0c27c5caa437d48e42c27c3b0510a49048fc33594d6d285e73df282c9bfc67ab"
+      },
+      "include": [
+        {
+          "url": "https://raw.githubusercontent.com/astromations/hazy/8d6da42c573710751716f2a13ea3b3af5048ef63/hazy.js",
+          "commit": "8d6da42c573710751716f2a13ea3b3af5048ef63",
+          "sha256": "9cc8c05aa43532e7eca5866422c4b486562592311860edee70e0df0e41881e7e",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "default-dynamic",
+      "name": "Default Dynamic",
+      "repo": "JulienMaille/spicetify-dynamic-theme",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/JulienMaille/spicetify-dynamic-theme/b3bf02df904b71cde74aedd113cba5258c613047/user.css",
+        "commit": "b3bf02df904b71cde74aedd113cba5258c613047",
+        "sha256": "ce8bb23587c96f3a1fe2ee7939af5c61c854b864978b1b52392f8b79a1e8e8ce"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/JulienMaille/spicetify-dynamic-theme/b3bf02df904b71cde74aedd113cba5258c613047/color.ini",
+        "commit": "b3bf02df904b71cde74aedd113cba5258c613047",
+        "sha256": "a65a5d1ad5717a1abb8431bd8b5f1d8f044cf110738d57f6ee5137e11f136b56"
+      },
+      "include": [
+        {
+          "url": "https://raw.githubusercontent.com/JulienMaille/spicetify-dynamic-theme/b3bf02df904b71cde74aedd113cba5258c613047/Vibrant.min.js",
+          "commit": "b3bf02df904b71cde74aedd113cba5258c613047",
+          "sha256": "5643028f54eb286c484ab005af77c4f84c74c2bba37a67613caba9b7ba769d81",
+          "module": false
+        },
+        {
+          "url": "https://raw.githubusercontent.com/JulienMaille/spicetify-dynamic-theme/b3bf02df904b71cde74aedd113cba5258c613047/default-dynamic.js",
+          "commit": "b3bf02df904b71cde74aedd113cba5258c613047",
+          "sha256": "6af040233a52e15f982cbb326c9c8a247619348891b69095d0a9b8f1ed7698b9",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "wmpotify",
+      "name": "WMPotify",
+      "repo": "Ingan121/WMPotify",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/Ingan121/WMPotify/6aa2b5f0b40fdfc596590a6f4c473cffac65ee4a/theme/dist/user.css",
+        "commit": "6aa2b5f0b40fdfc596590a6f4c473cffac65ee4a",
+        "sha256": "37d267591d3bf607362dbf1f3704fa3aef599426410539d6147645b6530d2c99"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/Ingan121/WMPotify/6aa2b5f0b40fdfc596590a6f4c473cffac65ee4a/theme/dist/color.ini",
+        "commit": "6aa2b5f0b40fdfc596590a6f4c473cffac65ee4a",
+        "sha256": "63b68e88102624c55f66e1c5a7c8eeed3dc0baff8a68e62ee4813990c83870cc"
+      },
+      "include": [
+        {
+          "url": "https://cdn.jsdelivr.net/gh/Ingan121/WMPotify@refs/heads/master/theme/dist/theme.js",
+          "commit": null,
+          "sha256": "2933b72f670255eae1f03209f99aaf6067d82f38599086768967987b0eca0c1d",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    },
+    {
+      "id": "fluent",
+      "name": "Fluent",
+      "repo": "williamckha/spicetify-fluent",
+      "usercss": {
+        "url": "https://raw.githubusercontent.com/williamckha/spicetify-fluent/64b946af1ee4a5ed761d2f065c45b710e06bc123/user.css",
+        "commit": "64b946af1ee4a5ed761d2f065c45b710e06bc123",
+        "sha256": "7111c1c7eba747073b08630d94863af94e8c78acc2f7d43b05583cd3ee204104"
+      },
+      "schemes": {
+        "url": "https://raw.githubusercontent.com/williamckha/spicetify-fluent/64b946af1ee4a5ed761d2f065c45b710e06bc123/color.ini",
+        "commit": "64b946af1ee4a5ed761d2f065c45b710e06bc123",
+        "sha256": "a43ef5b87dc13116663aa5b0c24644de143b742c07daf7b729a8dcd653e0f9c8"
+      },
+      "include": [
+        {
+          "url": "https://raw.githubusercontent.com/williamckha/spicetify-fluent/64b946af1ee4a5ed761d2f065c45b710e06bc123/fluent.js",
+          "commit": "64b946af1ee4a5ed761d2f065c45b710e06bc123",
+          "sha256": "8cd470d5956930cecb90886ce60e457ab22c8f86fcd730e488d33af0ffbe9bfd",
+          "module": false
+        }
+      ],
+      "pinned": "2026-10-18"
+    }
+  ]
+}
