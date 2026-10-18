@@ -31,6 +31,18 @@ seeding demo state.
 Bundles `shoot.mjs` and a Marketplace reference covering discovery, the manifest schema, and
 the preview crop.
 
+### `spicetify-theme-matrix`
+
+Sweeps an extension's UI across popular Marketplace themes (Comfy, Dribbblish, Catppuccin,
+Lucid, Bloom, ...) and reports, per theme and colour scheme, whether each element is present,
+visible, unoccluded, and legible, with a screenshot of every cell. Themes are injected at
+runtime the way Marketplace installs them, so there is no `spicetify apply` and no restart
+between themes.
+
+Theme JavaScript runs inside your logged-in client, so every theme file is pinned by sha256,
+and `refresh` shows the theme.js diff before a pin moves. Bundles `matrix.mjs` and a pinned
+`themes.json` of ten popular themes. Requires `spicetify-screenshots` alongside it.
+
 ## Install
 
 Clone into your agent's skills directory:
@@ -48,11 +60,12 @@ reload work — is documented in the `spicetify-live-test` skill itself.
 
 ## Per-repo files
 
-Both skills read a Markdown spec from the root of each extension repo, which is what turns
+Each skill reads a Markdown spec from the root of each extension repo, which is what turns
 them from exploratory into mechanical. Templates in `templates/`:
 
 - **`tests.live.md`** — storage keys, expected console patterns, numbered test scenarios
 - **`screenshots.md`** — shot list, readiness predicate, fixtures, and a disambiguation table
+- **`themes.md`** — surfaces and elements to check under each theme, and themes to skip
 
 The disambiguation table is worth calling out. Spotify's native "Save to Liked Songs" control
 is a green checkmark, and it sits in exactly the places extensions like to put badges. During
